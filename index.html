@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myanmar Food</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- sidebar -->
+
+    <div class="sidebar">
+      <h1 class="logo">Myanmar Food</h1>
+      <div class="sidebar-menus">
+        <a href="#"><i class="fa-solid fa-store"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-receipt"></i>Income</a>
+        <a href="#"><i class="fa-solid fa-users-rectangle"></i>Staffs</a>
+        <a href="delivery.html"><i class="fa-solid fa-truck-fast"></i>Delivery
+          <span class="badge bg-primary">10</span></a>
+        <a href="#"><i class="fa-solid fa-comments"></i>Customer Review</a>
+        <a href="#"><i class="fa-solid fa-gear"></i>Seetting</a>
+      </div>
+
+      <div class="sidebar-logout">
+        <a href="login_page.html"
+          ><ion-icon name="log-out-outline"></ion-icon>Logout</a
+        >
+      </div>
+    </div>
+
+    <!-- main -->
+    <div class="main">
+      <!--main navbar-->
+      <div class="main-navbar">
+        <ion-icon
+          class="menu-toggle"
+          name="menu-outline"
+          onclick="toggleSidebar()"
+        ></ion-icon>
+
+        <div class="search">
+          <input type="text" placeholder="What you want to eat" />
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div class="profile">
+          <a class="cart" href="#"><i class="fa-solid fa-bell"></i></a>
+          <a class="cart" href="#"
+            ><ion-icon name="person-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+
+    <!-- card-->
+    <div class="card--wrapper">
+      <h3 class="main-title"> Overview</h3>
+      <div class="card-container">
+    </div>
+      <div class="cards">
+        <div class="card-content">
+          <div class="crd-content">
+            <div class="number">1148</div>
+            <div class="card-name">Order Received</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-utensils fa-2xl"></i>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="crd-content">
+            <div class="number">986</div>
+            <div class="card-name">Order Delivered</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-truck-fast fa-2xl"></i>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="crd-content">
+            <div class="number">1217</div>
+            <div class="card-name">Daily Customer</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-users fa-2xl"></i>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="crd-content">
+            <div class="number">1217 MMK</div>
+            <div class="card-name">Income</div>
+          </div>
+          <div class="icon-box">
+            <i class="fa-solid fa-coins fa-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- chart -->
+      <div class="line-chart">
+        <div class="charts">
+          <div class="chart">
+            <h2>Monthly Customer (October)</h2>
+            <div class="wrapper">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="img/food 7.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Food 5</h5>
+              <p class="card-text">Last Week Special Menu</p>
+              <a href="#" class="btn btn-primary">Add New Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="main-hightlight">
+        <div class="main-header">
+          <h2 class="main-title">Top Order</h2>
+          <div class="main-arrow">
+            <ion-icon
+              class="back"
+              name="chevron-back-circle-outline"
+            ></ion-icon>
+            <ion-icon
+              class="next"
+              name="chevron-forward-circle-outline"
+            ></ion-icon>
+          </div>
+        </div>
+
+        <div class="hightlight-wrapper">
+          <div class="hightlight-card">
+            <img class="hightlight-img" src="img/food 1.jpg" alt="#" />
+            <div class="hightlight-desc">
+              <h4>Food 1</h4>
+              <p>2000 MMK</p>
+            </div>
+          </div>
+          <div class="hightlight-card">
+            <img class="hightlight-img" src="img/food 2.jpg" alt="#" />
+            <div class="hightlight-desc">
+              <h4>Food 2</h4>
+              <p>3000 MMK</p>
+            </div>
+          </div>
+          <div class="hightlight-card">
+            <img class="hightlight-img" src="img/food 3.png" alt="#" />
+            <div class="hightlight-desc">
+              <h4>Food 3</h4>
+              <p>1200 MMK</p>
+            </div>
+          </div>
+          <div class="hightlight-card">
+            <img class="hightlight-img" src="img/food 4.jpg" alt="#" />
+            <div class="hightlight-desc">
+              <h4>Food 4</h4>
+              <p>1200 MMK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://code.jquery.comjquery-2.2.4.min.js"></script>
+    <script src="mobile.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("sidebar-hidden");
+      }
+    </script>
+  </body>
+</html>
