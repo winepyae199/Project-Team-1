@@ -27,8 +27,29 @@
     />
 </head>
 <body>
-    <!-- sidebar -->
 
+    <!--Navbar-->
+    <div class="main-navbar">
+        <ion-icon
+          class="menu-toggle"
+          name="menu-outline"
+          onclick="toggleSidebar()"
+        ></ion-icon>
+
+        <div class="search">
+          <input type="text" placeholder="What you want to eat" />
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div class="profile">
+          <a class="cart" href="#"><i class="fa-solid fa-bell"></i></a>
+          <a class="cart" href="#"
+            ><ion-icon name="person-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+    
+    <!-- sidebar -->
     <div class="sidebar">
       <h1 class="logo">Myanmar Food</h1>
       <div class="sidebar-menus">
